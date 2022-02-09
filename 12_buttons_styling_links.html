@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12- Buttons and Styling Links</title>
+    <style>
+        .container{
+            background-color: #a24dcc;
+            border: 4px solid rgb(15, 24, 151);
+            padding: 40px;
+            margin: 12px auto;
+            width: 670px;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #idlink{
+            float: right;
+        }
+        #idbtn{
+            float: left;
+        }
+        .btn{
+            background-color: rgb(16, 199, 16);
+            color: azure;
+            border: 2px solid black;
+            padding: 6px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn:hover{
+            background-color: rgb(9, 172, 9);
+            border-color: aliceblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="div1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quos voluptatibus amet perspiciatis vitae eius reprehenderit odit molestiae! Blanditiis adipisci sint inventore repellat veniam? Iste, recusandae non, molestiae quisquam totam reprehenderit dolorem repudiandae quasi ipsa mollitia ea laudantium magnam repellat?</p>
+        <a href="" class="btn" id="idlink">Open in detail</a>
+        <button class="btn" id="idbtn">Read More</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.1- Forms</title>
+    <style>
+        #heading{
+            color: rgb(50, 50, 230);
+            background-color: beige;
+        }
+        #submit{
+            background-color: rgb(79, 79, 250);
+            color: white;
+            border-color: green;
+        }
+        #reset{
+            color: white;
+            background-color: rgb(223, 35, 82);
+        }
+        #photo{
+            background-color: rgb(161, 61, 255);
+            color: azure;
+            border-style: solid;
+            border-width: 55px;
+        }
+        #address{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <hr color="bluegrey">
+    <hr color="bluegrey">
+    <h1 id="heading">&nbsp;Fill The Form</h1>
+
+    <div>
+        <form acrion="backend.php">
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>&nbsp;Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Fill details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Roll No.</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;ID No.</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Branch</td>
+                    <td><select >
+                        <option value="CS I">CS I</option>
+                        <option value="CS II">CS II</option>
+                        <option value="CS AI-ML" selected>CS AI-ML</option>
+                        <option value="CS AI">CS AI</option>
+                        <option value="CS IOT">CS IOT</option>
+                        <option value="CS DS-1">CS DS-1</option>
+                        <option value="CS DS-2">CS DS-2</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Section</td>
+                    <td><select >
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="No" selected>No Section</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Gmail ID</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Address</td>
+                    <td><textarea type="text" id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Upload Photo</td>
+                    <td><input type="image" value="Upload&nbsp;" id="photo"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;Today's Date</td>
+                    <td><input type="date"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="submit" id="submit">
+        <input type="reset" id="reset">
+    </form>
+    </div>
+</body>
+
+</html>

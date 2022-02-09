@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13- Nevigation Menu</title>
+    <style>
+        body{
+            background-color: rgb(238, 230, 230);
+        }
+        .container{
+            background-color: blueviolet;
+            border-radius: 4px;
+        }
+        .container li{
+            list-style: none;
+            float: left;
+            margin: 13px 20px;
+        }
+
+        .container ul{
+            overflow: auto;
+        }
+        ul li a{
+            padding: 3px 3px;
+            color:aliceblue;
+            text-decoration: none;
+        }
+        input{
+            border: none;
+            background-color: aliceblue;
+            border-radius: 4px;
+            padding: 3px 17px;
+            width: 129px;
+            height: 20px;
+        }
+        a:hover{
+            color: black;
+            background-color: aliceblue;
+            border-radius: 4px;
+        }
+        input:hover{
+            border: none;
+        }
+        #search{
+            float: right;
+            padding: 1px 25px;
+            margin: 11px 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li><a href="https://google.com">Home</a></li>
+            <li><a href="https://google.com">Explore</a></li>
+            <li><a href="https://google.com">Documentation</a></li>
+            <li><a href="https://google.com">About Us</a></li>
+            <li><a href="https://google.com">Contact Us</a></li>
+            <div class="searchbar">
+                <input type="text" id="search" placeholder="Seach in the website">
+            </div>
+        </ul>
+    </nav>
+</body>
+</html>
